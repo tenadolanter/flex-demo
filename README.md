@@ -55,14 +55,23 @@ align-content
 ```bash
 flex-driection: row | row-reverse | column | column-reverse
 ```
+当设置为flex-driection: row，效果：
 
 ![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flex-driection1.jpg)
 
+当设置为flex-driection: row-reverse，效果：
+
 ![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flex-driection2.jpg)
+
+当设置为flex-driection: column，效果：
 
 ![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flex-driection3.jpg)
 
+当设置为flex-driection: column-reverse，效果：
+
 ![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flex-driection4.jpg)
+
+如下代码直接复制即可以查看效果：
 
 ```bash
 <style type="text/css">
