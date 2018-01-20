@@ -1,0 +1,37 @@
+<style type="text/css">
+.box{
+	display: flex;
+	display: -webkit-flex;
+	/*纵轴的顶部对齐*/
+	/*align-items: flex-start;*/
+	/*纵轴的底部对齐*/
+	/*align-items: flex-end;*/
+	/*纵轴的中点对齐*/
+	/*align-items: center;*/
+	/*项目的第一行文字的基线对齐*/
+	/*align-items: baseline;*/
+	/*默认对齐方式，如果项目未设置高度或设为auto，将占满整个容器的高度*/
+	align-items: stretch;
+	background: #999;
+	width: 100%;
+}
+.box span{
+	margin: 10px 10px;
+	padding: 10px;
+	background: #ff0;
+	width: 50px;
+}
+.box span:nth-of-type(2n){
+	height: 80px;
+	padding-top: 20px;
+}
+</style>
+<div class="box">
+	<span>你好1</span>
+	<span>你好2</span>
+	<span>你好3</span>
+	<span>你好4</span>
+	<span>你好5</span>
+	<span>你好6</span>
+	<span>你好7</span>
+</div>

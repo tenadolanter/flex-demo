@@ -1,0 +1,28 @@
+<style type="text/css">
+.box{
+	display: flex;
+	display: -webkit-flex;
+	background: #999;
+}
+.box span{
+	margin: 10px 10px;
+	padding: 10px;
+	background: #ff0;
+}
+.box span:nth-of-type(1){
+	order: 10;
+}
+.box span:nth-of-type(2){
+	order: -1;
+}
+.box span:nth-of-type(5){
+	order: -10;
+}
+</style>
+<div class="box">
+	<span>你好1</span>
+	<span>你好2</span>
+	<span>你好3</span>
+	<span>你好4</span>
+	<span>你好5</span>
+</div>
