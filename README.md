@@ -181,14 +181,109 @@ justify-content: flex-start | flex-end | center | space-between | space-around
 
 ![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/justify-content5.jpg)
 
+如下代码直接复制保存为html文件即可以查看效果：
 
+```bash
+<style type="text/css">
+.box{
+	display: flex;
+	display: -webkit-flex;
+	/*默认，项目左对齐*/
+	justify-content: flex-start;
+	/*项目右对齐*/
+	/*justify-content: flex-end;*/
+	/*项目居中对齐*/
+	/*justify-content: center;*/
+	/*项目两端对齐*/
+	/*justify-content: space-between;*/
+	/*每个项目两侧的间隔相等*/
+	/*justify-content: space-around;*/
+	background: #999;
+	width: 100%;
+}
+.box span{
+	margin: 10px 10px;
+	padding: 10px;
+	background: #ff0;
+	width: 50px;
+}
+</style>
+<div class="box">
+	<span>你好1</span>
+	<span>你好2</span>
+	<span>你好3</span>
+	<span>你好4</span>
+	<span>你好5</span>
+	<span>你好6</span>
+	<span>你好7</span>
+</div>
+```
+> 5、align-items属性定义项目在纵轴上的对齐方式，默认值为stretch，适用于项目在纵轴上高度不一样的情况，为了更好的看到效果，我为项目添加了一些样式
 
+```bash
+align-items: flex-start | flex-end | center | baseline | stretch
+```
+当设置为align-items: flex-start，效果：
 
+![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/align-items1.jpg)
 
+当设置为align-items: flex-end，效果：
 
+![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/align-items2.jpg)
 
+当设置为align-items: center，效果：
 
+![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/align-items3.jpg)
 
+当设置为align-items: baseline，效果：
+
+![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/align-items4.jpg)
+
+当设置为align-items: stretch，效果：
+
+![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/align-items5.jpg)
+
+如下代码直接复制保存为html文件即可以查看效果：
+
+```bash
+<style type="text/css">
+.box{
+	display: flex;
+	display: -webkit-flex;
+	/*纵轴的顶部对齐*/
+	/*align-items: flex-start;*/
+	/*纵轴的底部对齐*/
+	/*align-items: flex-end;*/
+	/*纵轴的中点对齐*/
+	/*align-items: center;*/
+	/*项目的第一行文字的基线对齐*/
+	/*align-items: baseline;*/
+	/*默认对齐方式，如果项目未设置高度或设为auto，将占满整个容器的高度*/
+	align-items: stretch;
+	background: #999;
+	width: 100%;
+}
+.box span{
+	margin: 10px 10px;
+	padding: 10px;
+	background: #ff0;
+	width: 50px;
+}
+.box span:nth-of-type(2n){
+	height: 80px;
+	padding-top: 20px;
+}
+</style>
+<div class="box">
+	<span>你好1</span>
+	<span>你好2</span>
+	<span>你好3</span>
+	<span>你好4</span>
+	<span>你好5</span>
+	<span>你好6</span>
+	<span>你好7</span>
+</div>
+```
 
 
 
