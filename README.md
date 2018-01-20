@@ -117,7 +117,7 @@ flex-wrap: wrap | nowrap | wrap-reverse
 
 ![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flex-wrap2.jpg)
 
-当设置为flex-wrap: wrap-reverse，效果：
+当设置为flex-wrap: wrap-reverse，效果（第一行在下方）：
 
 ![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flex-wrap3.jpg)
 
@@ -284,6 +284,81 @@ align-items: flex-start | flex-end | center | baseline | stretch
 	<span>你好7</span>
 </div>
 ```
+> 6、align-content属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。(即需要设置容器的flex-wrap属性值为wrap)(为了让效更加明显，我设置了容器的高度)
+
+```bash
+align-content: flex-start | flex-end | center | space-between | space-around | stretch
+```
+当设置为align-content: flex-start，效果：
+
+![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/align-content1.jpg)
+
+当设置为align-content: flex-end，效果：
+
+![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/align-content2.jpg)
+
+当设置为align-content: center，效果：
+
+![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/align-content3.jpg)
+
+当设置为align-content: fspace-between，效果：
+
+![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/align-content4.jpg)
+
+当设置为align-content: flex-start，效果：
+
+![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/align-content5.jpg)
+
+当设置为align-content: stretch，效果：
+
+![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/align-content6.jpg)
+
+如下代码直接复制保存为html文件即可以查看效果：
+
+```bash
+<style type="text/css">
+.box{
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	/*与纵轴的顶部对齐*/
+	/*align-content: flex-start;*/
+	/*与纵轴的底部对齐*/
+	/*align-content: flex-end;*/
+	/*与纵轴的中点对齐*/
+	/*align-content: center;*/
+	/*与纵轴两端对齐*/
+	/*align-content: space-between;*/
+	/*每根轴线两侧的间隔都相等*/
+	/*align-content: space-around;*/
+	/*默认值，轴线占满整个交叉轴默认值，*/
+	align-content: stretch;
+	background: #999;
+	width: 600px;
+	height: 300px;
+}
+.box span{
+	margin: 10px 10px;
+	padding: 10px;
+	background: #ff0;
+	width: 50px;
+}
+</style>
+<div class="box">
+	<span>你好1</span>
+	<span>你好2</span>
+	<span>你好3</span>
+	<span>你好4</span>
+	<span>你好5</span>
+	<span>你好6</span>
+	<span>你好7</span>
+</div>
+```
+
+
+
+
+
 
 
 
