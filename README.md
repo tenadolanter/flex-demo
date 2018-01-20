@@ -442,9 +442,55 @@ align-content: flex-start | flex-end | center | space-between | space-around | s
 ```
 例如：以上面的为例子，假设父元素的宽度为1000px,每个子元素的宽度为100px,则还剩余500px的宽度，第1个子元素flex-grow值为 1，第2个子元素flex-grow值为 2，则会把500px分成三等分，第1个子元素增加500乘以1/3px的宽度，第2个子元素增加500乘以2/3px的宽度
 
+> 3、flex-shrink属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。
+
+如果项目没设置flex-shrink属性，则项目的默认flex-shrink值为1，当空间不足时，都将等比例缩小。如果一个项目的flex-shrink属性为0，其他项目都为1，则空间不足时flex-shrink属性为0的项目不缩小。
+
+flex-shrink的原理和flex-grow类似，理解一个另外一个就不难了。
+
+> 4、flex-basis属性定义了在分配多余空间之前，项目占据的主轴空间(默认值为auto，即项目的本来大小)
+
+注意：如果同时给项目设置flex-basis和width属性值，则flex-basis会覆盖width的值。例如同时给项目设置属性，flex-basis：80px;width:100px;则项目的实际宽度是80px;
+
+> 5、flex属性
+
+flex属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。
+
+> 6、align-self属性
+
+align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。
 
 
+![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/align-self.jpg)
 
+如下代码直接复制保存为html文件即可以查看效果：
+
+```bash
+<style type="text/css">
+.box{
+	display: flex;
+	display: -webkit-flex;
+	background: #999;
+	height: 300px;
+	align-items: flex-start;
+}
+.box span{
+	margin: 10px 10px;
+	padding: 10px;
+	background: #ff0;
+}
+.box span:nth-of-type(3){
+	align-self: flex-end;
+}
+</style>
+<div class="box">
+	<span>你好1</span>
+	<span>你好2</span>
+	<span>你好3</span>
+	<span>你好4</span>
+	<span>你好5</span>
+</div>
+```
 
 ## Flex布局使用案例
 
