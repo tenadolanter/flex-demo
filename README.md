@@ -42,15 +42,15 @@ Flex布局为盒子模型提供了很大的灵活性，任何一个容器都可�
 ## 容器的属性
 
 ```bash
-flex-driection
-flex-wrap
-flex-flow
-justify-content
-align-items
-align-content
+1、flex-driection
+2、flex-wrap
+3、flex-flow
+4、justify-content
+5、align-items
+6、align-content
 ```
 
-> flex-driection设置项目的排列方向
+> 1、flex-driection设置项目的排列方向，默认为row
 
 ```bash
 flex-driection: row | row-reverse | column | column-reverse
@@ -104,10 +104,10 @@ flex-driection: row | row-reverse | column | column-reverse
 </div>
 ```
 
-> flex-driection设置项目的排列方向
+> 2、flex-wrap设置项目是否在一条线上，默认为nowrap
 
 ```bash
-flex-driection: wrap | nowrap | wrap-reverse
+flex-wrap: wrap | nowrap | wrap-reverse
 ```
 当设置为flex-wrap: wrap，效果：
 
@@ -120,6 +120,76 @@ flex-driection: wrap | nowrap | wrap-reverse
 当设置为flex-wrap: wrap-reverse，效果：
 
 ![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flex-wrap3.jpg)
+
+如下代码直接复制保存为html文件即可以查看效果：
+
+```bash
+<style type="text/css">
+.box{
+	display: flex;
+	display: -webkit-flex;
+	/*换行*/
+	/*flex-wrap: wrap;*/
+	/*不换行，默认*/
+	/*flex-wrap: nowrap;*/
+	/*换行，第一行在下方*/
+	/*flex-wrap: wrap-reverse;*/
+	background: #999;
+	width: 100%;
+}
+.box span{
+	margin: 10px 10px;
+	padding: 10px;
+	background: #ff0;
+	width: 50px;
+}
+</style>
+<div class="box">
+	<span>你好1</span>
+	<span>你好2</span>
+	<span>你好3</span>
+	<span>你好4</span>
+	<span>你好5</span>
+	<span>你好6</span>
+	<span>你好7</span>
+</div>
+```
+> 3、flex-flow属性是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap
+
+> 4、justify-content属性定义项目在主轴上的对齐方式，默认值为flex-start
+
+```bash
+justify-content: flex-start | flex-end | center | space-between | space-around
+```
+当设置为justify-content: flex-start，效果：
+
+![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/justify-content1.jpg)
+
+当设置为justify-content: flex-end，效果：
+
+![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/justify-content2.jpg)
+
+当设置为justify-content: center，效果：
+
+![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/justify-content3.jpg)
+
+当设置为justify-content: space-between，效果：
+
+![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/justify-content4.jpg)
+
+当设置为justify-content: space-around，效果：
+
+![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/justify-content5.jpg)
+
+
+
+
+
+
+
+
+
+
 
 
 
