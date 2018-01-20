@@ -27,7 +27,7 @@ Flex布局为盒子模型提供了很大的灵活性，任何一个容器都可�
 }
 ```
 
-####注意：使用Flex布局之后，里面的float、clear、vertical-align属性将失效。
+#### 注意：使用Flex布局之后，里面的float、clear、vertical-align属性将失效。
 
 ## Flex布局中的基本概念
 
@@ -50,7 +50,7 @@ Flex布局为盒子模型提供了很大的灵活性，任何一个容器都可�
 6、align-content
 ```
 
-####1、flex-driection设置项目的排列方向，默认为row
+#### 1、flex-driection设置项目的排列方向，默认为row
 
 ```bash
 flex-driection: row | row-reverse | column | column-reverse
@@ -104,7 +104,7 @@ flex-driection: row | row-reverse | column | column-reverse
 </div>
 ```
 
-####2、flex-wrap设置项目是否在一条线上，默认为nowrap
+#### 2、flex-wrap设置项目是否在一条线上，默认为nowrap
 
 ```bash
 flex-wrap: wrap | nowrap | wrap-reverse
@@ -154,9 +154,9 @@ flex-wrap: wrap | nowrap | wrap-reverse
 	<span>你好7</span>
 </div>
 ```
-####3、flex-flow属性是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap
+#### 3、flex-flow属性是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap
 
-####4、justify-content属性定义项目在主轴上的对齐方式，默认值为flex-start
+#### 4、justify-content属性定义项目在主轴上的对齐方式，默认值为flex-start
 
 ```bash
 justify-content: flex-start | flex-end | center | space-between | space-around
@@ -218,7 +218,7 @@ justify-content: flex-start | flex-end | center | space-between | space-around
 	<span>你好7</span>
 </div>
 ```
-####5、align-items属性定义项目在纵轴上的对齐方式，默认值为stretch，适用于项目在纵轴上高度不一样的情况，为了更好的看到效果，我为项目添加了一些样式
+#### 5、align-items属性定义项目在纵轴上的对齐方式，默认值为stretch，适用于项目在纵轴上高度不一样的情况，为了更好的看到效果，我为项目添加了一些样式
 
 ```bash
 align-items: flex-start | flex-end | center | baseline | stretch
@@ -284,7 +284,7 @@ align-items: flex-start | flex-end | center | baseline | stretch
 	<span>你好7</span>
 </div>
 ```
-####6、align-content属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。(即需要设置容器的flex-wrap属性值为wrap)(为了让效更加明显，我设置了容器的高度)
+#### 6、align-content属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。(即需要设置容器的flex-wrap属性值为wrap)(为了让效更加明显，我设置了容器的高度)
 
 ```bash
 align-content: flex-start | flex-end | center | space-between | space-around | stretch
@@ -365,7 +365,7 @@ align-content: flex-start | flex-end | center | space-between | space-around | s
 5、flex
 6、align-self
 ```
-####1、order定义项目的排列顺序。数值越小，排列越靠前，默认为0。
+#### 1、order定义项目的排列顺序。数值越小，排列越靠前，默认为0。
 
 如下为第1个设置order属性为10，第2个设置order属性为-1，第5个设置order属性为-10，效果如下
 
@@ -404,7 +404,7 @@ align-content: flex-start | flex-end | center | space-between | space-around | s
 </div>
 ```
 
-####2、flex-grow属性定义项目的放大比例，主要在父元素的宽度大于子元素的宽度之和时候起作用，它定义子元素如何分配父元素的剩余宽度，默认为0，这个时候不索取父元素的宽度。
+#### 2、flex-grow属性定义项目的放大比例，主要在父元素的宽度大于子元素的宽度之和时候起作用，它定义子元素如何分配父元素的剩余宽度，默认为0，这个时候不索取父元素的宽度。
 
 如下，给第1个子元素设置flex-grow属性值为1，第2个子元素设置flex-grow属性值为1，则父元素的剩余宽度会被分成三等分，分别添加给第1个第2个子元素，效果如下：
 
@@ -442,21 +442,21 @@ align-content: flex-start | flex-end | center | space-between | space-around | s
 ```
 例如：以上面的为例子，假设父元素的宽度为1000px,每个子元素的宽度为100px,则还剩余500px的宽度，第1个子元素flex-grow值为 1，第2个子元素flex-grow值为 2，则会把500px分成三等分，第1个子元素增加500乘以1/3px的宽度，第2个子元素增加500乘以2/3px的宽度
 
-####3、flex-shrink属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。
+#### 3、flex-shrink属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。
 
 如果项目没设置flex-shrink属性，则项目的默认flex-shrink值为1，当空间不足时，都将等比例缩小。如果一个项目的flex-shrink属性为0，其他项目都为1，则空间不足时flex-shrink属性为0的项目不缩小。
 
 flex-shrink的原理和flex-grow类似，理解一个另外一个就不难了。
 
-####4、flex-basis属性定义了在分配多余空间之前，项目占据的主轴空间(默认值为auto，即项目的本来大小)
+#### 4、flex-basis属性定义了在分配多余空间之前，项目占据的主轴空间(默认值为auto，即项目的本来大小)
 
 注意：如果同时给项目设置flex-basis和width属性值，则flex-basis会覆盖width的值。例如同时给项目设置属性，flex-basis：80px;width:100px;则项目的实际宽度是80px;
 
-####5、flex属性
+#### 5、flex属性
 
 flex属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。
 
-####6、align-self属性
+#### 6、align-self属性
 
 align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。
 
