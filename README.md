@@ -440,7 +440,7 @@ align-content: flex-start | flex-end | center | space-between | space-around | s
 	<span>你好5</span>
 </div>
 ```
-例如：以上面的为例子，假设父元素的宽度为1000px,每个子元素的宽度为100px,则还剩余500px的宽度，第1个子元素flex-grow值为 1，第2个子元素flex-grow值为 2，则会把500px分成三等分，第1个子元素增加500*1/3px的宽度，第2个子元素增加500*2/3px的宽度
+例如：以上面的为例子，假设父元素的宽度为1000px,每个子元素的宽度为100px,则还剩余500px的宽度，第1个子元素flex-grow值为 1，第2个子元素flex-grow值为 2，则会把500px分成三等分，第1个子元素增加500乘以1/3px的宽度，第2个子元素增加500乘以2/3px的宽度
 
 
 
