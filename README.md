@@ -404,7 +404,7 @@ align-content: flex-start | flex-end | center | space-between | space-around | s
 </div>
 ```
 
-> 2、flex-grow属性定义项目的放大比例，主要在父元素的宽度大于子元素的宽度之和时候起作用，它定义子元素如何分配父元素的剩余宽度，默认为0时候不索取父元素的宽度。
+> 2、flex-grow属性定义项目的放大比例，主要在父元素的宽度大于子元素的宽度之和时候起作用，它定义子元素如何分配父元素的剩余宽度，默认为0，这个时候不索取父元素的宽度。
 
 如下，给第1个子元素设置flex-grow属性值为1，第2个子元素设置flex-grow属性值为1，则父元素的剩余宽度会被分成三等分，分别添加给第1个第2个子元素，效果如下：
 
@@ -440,16 +440,7 @@ align-content: flex-start | flex-end | center | space-between | space-around | s
 	<span>你好5</span>
 </div>
 ```
-
-
-
-
-
-
-
-
-
-
+例如：以上面的为例子，假设父元素的宽度为1000px,每个子元素的宽度为100px,则还剩余500px的宽度，第1个子元素flex-grow值为 1，第2个子元素flex-grow值为 2，则会把500px分成三等分，第1个子元素增加500*1/3px的宽度，第2个子元素增加500*2/3px的宽度
 
 
 
