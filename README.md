@@ -355,15 +355,103 @@ align-content: flex-start | flex-end | center | space-between | space-around | s
 </div>
 ```
 
-
-
-
-
-
-
-
-
 ## 项目的属性
+
+```bash
+1、order
+2、flex-grow
+3、flex-shrink
+4、flex-basis
+5、flex
+6、align-self
+```
+> 1、order定义项目的排列顺序。数值越小，排列越靠前，默认为0。
+
+如下为第1个设置order属性为10，第2个设置order属性为-1，第5个设置order属性为-10，效果如下
+
+![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/order.jpg)
+
+如下代码直接复制保存为html文件即可以查看效果：
+
+```bash
+<style type="text/css">
+.box{
+	display: flex;
+	display: -webkit-flex;
+	background: #999;
+}
+.box span{
+	margin: 10px 10px;
+	padding: 10px;
+	background: #ff0;
+}
+.box span:nth-of-type(1){
+	order: 10;
+}
+.box span:nth-of-type(2){
+	order: -1;
+}
+.box span:nth-of-type(5){
+	order: -10;
+}
+</style>
+<div class="box">
+	<span>你好1</span>
+	<span>你好2</span>
+	<span>你好3</span>
+	<span>你好4</span>
+	<span>你好5</span>
+</div>
+```
+
+> 2、flex-grow属性定义项目的放大比例，主要在父元素的宽度大于子元素的宽度之和时候起作用，它定义子元素如何分配父元素的剩余宽度，默认为0时候不索取父元素的宽度。
+
+如下，给第1个子元素设置flex-grow属性值为1，第2个子元素设置flex-grow属性值为1，则父元素的剩余宽度会被分成三等分，分别添加给第1个第2个子元素，效果如下：
+
+![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flex-grow.jpg)
+
+如下代码直接复制保存为html文件即可以查看效果：
+
+```bash
+<style type="text/css">
+.box{
+	display: flex;
+	display: -webkit-flex;
+	background: #999;
+}
+.box span{
+	margin: 10px 10px;
+	padding: 10px;
+	background: #ff0;
+	width: 50px;
+}
+.box span:nth-of-type(1){
+	flex-grow: 1;
+}
+.box span:nth-of-type(2){
+	flex-grow: 2;
+}
+</style>
+<div class="box">
+	<span>你好1</span>
+	<span>你好2</span>
+	<span>你好3</span>
+	<span>你好4</span>
+	<span>你好5</span>
+</div>
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
