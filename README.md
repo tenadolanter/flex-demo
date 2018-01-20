@@ -493,9 +493,13 @@ align-self属性允许单个项目有与其他项目不一样的对齐方式，�
 ```
 
 参考:
+
 [1] http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
+
 [2] https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes
+
 [3] http://blog.csdn.net/qiudw_01/article/details/47061099
+
 [4] https://www.w3cplus.com/css3/a-guide-to-flexbox-new.html
 
 
