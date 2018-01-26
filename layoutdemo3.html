@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>某个网格宽度为固定，其余分配剩余空间</title>
+</head>
+<body>
+
+<style type="text/css">
+.box{
+	display: flex;
+	justify-content: center;
+	background: #f00;
+}
+.box span{
+	flex: 1;
+	text-align: center;
+	border: 1px solid #000;
+}
+.box span:nth-of-type(1){
+	flex: 0 0 50%; /*flex-grow: 0;flex-shrink: 0;flex-basis: 50%;的缩写*/
+}
+</style>	
+<div class="box">
+	<span>占用50%的空间</span>
+	<span>222</span>
+	<span>333</span>
+</div>
+
+</body>
+</html>

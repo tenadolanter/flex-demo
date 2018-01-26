@@ -504,5 +504,224 @@ align-self属性允许单个项目有与其他项目不一样的对齐方式，�
 
 
 
+## Flex布局案例以及源码
 
+#### 1、Flex布局实现宽度100%自适应效果
 
+```bash
+<style type="text/css">
+.box{
+	display: flex; /*主要代码*/
+	justify-content: center;
+	background: #f00;
+}
+</style>	
+<div class="box">我是内容</div>
+```
+效果如下：
+
+![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flexdemo1.jpg)
+
+#### 2、Flex布局实现栅格效果
+
+```bash
+<style type="text/css">
+.box{
+	display: flex; /*容器*/
+	justify-content: center;
+	background: #f00;
+}
+.box span{
+	flex: 1; /*项目flex-grow属性值为1*/
+	text-align: center;
+	border: 1px solid #000;
+}
+</style>	
+<div class="box">
+	<span>111</span>
+	<span>222</span>
+	<span>333</span>
+</div>
+```
+效果如下：
+
+![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flexdemo2.jpg)
+
+#### 3、某个网格宽度为固定，其余分配剩余空间
+
+```bash
+<style type="text/css">
+.box{
+	display: flex;
+	justify-content: center;
+	background: #f00;
+}
+.box span{
+	flex: 1;
+	text-align: center;
+	border: 1px solid #000;
+}
+.box span:nth-of-type(1){
+	flex: 0 0 50%; /*flex-grow: 0;flex-shrink: 0;flex-basis: 50%;的缩写*/
+}
+</style>	
+<div class="box">
+	<span>占用50%的空间</span>
+	<span>222</span>
+	<span>333</span>
+</div>
+```
+效果如下：
+
+![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flexdemo3.jpg)
+
+#### 4、圣杯布局
+
+```bash
+<style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+}
+.box{
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	text-align: center;
+}
+.header{
+	height: 30px;
+	background: #666666;
+}
+/*main是box的flex布局下的项目，然后main本身又是一个flex布局*/
+.main{
+	display: flex;
+	flex: 1; /*让main的内容放大，垂直方向铺满整个屏幕*/
+	background: #D6D6D6;
+}
+.content{
+	flex: 1;/*让content的内容放大，水平方向铺满整个屏幕*/
+}
+.right{
+	flex: 0 0 300px;
+	background: #FF6633;
+}
+.footer{
+	height: 30px;
+	background: #666666;
+}
+</style>	
+<div class="box">
+	<div class="header">头部</div>
+	<div class="main">
+		<div class="content">主体</div>
+		<div class="right">右侧</div>
+	</div>
+	<div class="footer">底部</div>
+</div>
+```
+主要代码是：
+
+垂直方向采用flex布局，主要是header、main、footer，flex-driection:column
+
+特别需要注意的是，设置body的高度，即min-height:100vh;且需要清除边距，margin：0;padding: 0;
+
+效果如下：
+
+![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flexdemo4.jpg)
+
+#### 5、固定的底栏
+
+```bash
+<style type="text/css">
+*{margin: 0;}
+.box{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	text-align: center;
+}
+.main{
+	flex: 1;
+}
+.header{
+	height: 30px;
+	background: #666666;
+}
+.footer{
+	height: 30px;
+	background: #666666;	
+}
+</style>	
+<div class="box">
+	<div class="header">头部</div>
+	<div class="main">
+		主体
+	</div>
+	<div class="footer">底部</div>
+</div>
+```
+效果如下：
+
+![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flexdemo5.jpg)
+
+#### 6、自适应的圣杯布局
+
+```bash
+<style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+}
+.box{
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	text-align: center;
+}
+.header{
+	height: 30px;
+	background: #666666;
+}
+.main{
+	width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex: 1;	
+	background: #D6D6D6;
+}
+.content{
+	flex: 1;
+}
+.right{
+	flex: 0 0 300px;
+	background: #FF6633;
+}
+.footer{
+	height: 30px;
+	background: #666666;
+}
+/*设置在小屏幕上显示效果*/
+@media (max-width: 1200px) {
+	.main{
+		width: 100%;
+	    flex-direction: column;
+	    flex: 1;
+	}
+	.right{
+		flex: 0;
+	}
+}
+</style>	
+<div class="box">
+	<div class="header">头部</div>
+	<div class="main">
+		<div class="content">主体</div>
+		<div class="right">右侧</div>
+	</div>
+	<div class="footer">底部</div>
+</div>
+```
+效果如下：
+
+![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flexdemo6.jpg)

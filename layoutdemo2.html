@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flex布局实现栅格效果</title>
+</head>
+<body>
+
+<style type="text/css">
+.box{
+	display: flex; /*容器*/
+	justify-content: center;
+	background: #f00;
+}
+.box span{
+	flex: 1; /*项目flex-grow属性值为1*/
+	text-align: center;
+	border: 1px solid #000;
+}
+</style>	
+<div class="box">
+	<span>111</span>
+	<span>222</span>
+	<span>333</span>
+</div>
+
+</body>
+</html>
