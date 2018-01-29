@@ -1,5 +1,16 @@
 # flex-layout-demo
 
+参考:
+
+[1] http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
+
+[2] https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes
+
+[3] http://blog.csdn.net/qiudw_01/article/details/47061099
+
+[4] https://www.w3cplus.com/css3/a-guide-to-flexbox-new.html
+
+
 ## Flex布局简介
 
 Flex英文为flexiable box，翻译为弹性盒子，Flex布局即弹性布局。
@@ -492,17 +503,6 @@ align-self属性允许单个项目有与其他项目不一样的对齐方式，�
 </div>
 ```
 
-参考:
-
-[1] http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
-
-[2] https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes
-
-[3] http://blog.csdn.net/qiudw_01/article/details/47061099
-
-[4] https://www.w3cplus.com/css3/a-guide-to-flexbox-new.html
-
-
 
 ## Flex布局案例以及源码
 
@@ -725,3 +725,23 @@ align-self属性允许单个项目有与其他项目不一样的对齐方式，�
 效果如下：
 
 ![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flexdemo6.jpg)
+
+
+## Flex布局问题以及处理办法
+
+#### 1、底部无法在最下面
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
