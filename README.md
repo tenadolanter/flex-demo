@@ -44,7 +44,7 @@ Flex布局为盒子模型提供了很大的灵活性，任何一个容器都可�
 
 采用 Flex 布局的元素，称为 Flex 容器（flex container），简称"容器"。它的所有子元素自动成为容器成员，称为 Flex 项目（flex item），简称"项目"。
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/case1.jpg)
+![Alt text](./images/case1.jpg)
 
 容器默认存在两根轴：水平的主轴（main axis）和垂直的侧轴（cross axis）。主轴的开始位置（与边框的交叉点）叫做main start，结束位置叫做main end；侧轴的开始位置叫做cross start，结束位置叫做cross end。
 
@@ -68,19 +68,19 @@ flex-driection: row | row-reverse | column | column-reverse
 ```
 当设置为flex-driection: row，效果：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flex-driection1.jpg)
+![Alt text](./images/flex-driection1.jpg)
 
 当设置为flex-driection: row-reverse，效果：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flex-driection2.jpg)
+![Alt text](./images/flex-driection2.jpg)
 
 当设置为flex-driection: column，效果：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flex-driection3.jpg)
+![Alt text](./images/flex-driection3.jpg)
 
 当设置为flex-driection: column-reverse，效果：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flex-driection4.jpg)
+![Alt text](./images/flex-driection4.jpg)
 
 如下代码直接复制保存为html文件即可以查看效果：
 
@@ -122,15 +122,15 @@ flex-wrap: wrap | nowrap | wrap-reverse
 ```
 当设置为flex-wrap: wrap，效果：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flex-wrap1.jpg)
+![Alt text](./images/flex-wrap1.jpg)
 
 当设置为flex-wrap: nowrap，效果（不换行，默认会缩放）：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flex-wrap2.jpg)
+![Alt text](./images/flex-wrap2.jpg)
 
 当设置为flex-wrap: wrap-reverse，效果（第一行在下方）：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flex-wrap3.jpg)
+![Alt text](./images/flex-wrap3.jpg)
 
 如下代码直接复制保存为html文件即可以查看效果：
 
@@ -174,23 +174,23 @@ justify-content: flex-start | flex-end | center | space-between | space-around
 ```
 当设置为justify-content: flex-start，效果：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/justify-content1.jpg)
+![Alt text](./images/justify-content1.jpg)
 
 当设置为justify-content: flex-end，效果：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/justify-content2.jpg)
+![Alt text](./images/justify-content2.jpg)
 
 当设置为justify-content: center，效果：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/justify-content3.jpg)
+![Alt text](./images/justify-content3.jpg)
 
 当设置为justify-content: space-between，效果：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/justify-content4.jpg)
+![Alt text](./images/justify-content4.jpg)
 
 当设置为justify-content: space-around，效果：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/justify-content5.jpg)
+![Alt text](./images/justify-content5.jpg)
 
 如下代码直接复制保存为html文件即可以查看效果：
 
@@ -236,23 +236,23 @@ align-items: flex-start | flex-end | center | baseline | stretch
 ```
 当设置为align-items: flex-start，效果：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/align-items1.jpg)
+![Alt text](./images/align-items1.jpg)
 
 当设置为align-items: flex-end，效果：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/align-items2.jpg)
+![Alt text](./images/align-items2.jpg)
 
 当设置为align-items: center，效果：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/align-items3.jpg)
+![Alt text](./images/align-items3.jpg)
 
 当设置为align-items: baseline，效果：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/align-items4.jpg)
+![Alt text](./images/align-items4.jpg)
 
 当设置为align-items: stretch，效果：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/align-items5.jpg)
+![Alt text](./images/align-items5.jpg)
 
 如下代码直接复制保存为html文件即可以查看效果：
 
@@ -302,27 +302,27 @@ align-content: flex-start | flex-end | center | space-between | space-around | s
 ```
 当设置为align-content: flex-start，效果：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/align-content1.jpg)
+![Alt text](./images/align-content1.jpg)
 
 当设置为align-content: flex-end，效果：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/align-content2.jpg)
+![Alt text](./images/align-content2.jpg)
 
 当设置为align-content: center，效果：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/align-content3.jpg)
+![Alt text](./images/align-content3.jpg)
 
 当设置为align-content: fspace-between，效果：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/align-content4.jpg)
+![Alt text](./images/align-content4.jpg)
 
 当设置为align-content: flex-start，效果：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/align-content5.jpg)
+![Alt text](./images/align-content5.jpg)
 
 当设置为align-content: stretch，效果：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/align-content6.jpg)
+![Alt text](./images/align-content6.jpg)
 
 如下代码直接复制保存为html文件即可以查看效果：
 
@@ -380,7 +380,7 @@ align-content: flex-start | flex-end | center | space-between | space-around | s
 
 如下为第1个设置order属性为10，第2个设置order属性为-1，第5个设置order属性为-10，效果如下
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/order.jpg)
+![Alt text](./images/order.jpg)
 
 如下代码直接复制保存为html文件即可以查看效果：
 
@@ -419,7 +419,7 @@ align-content: flex-start | flex-end | center | space-between | space-around | s
 
 如下，给第1个子元素设置flex-grow属性值为1，第2个子元素设置flex-grow属性值为1，则父元素的剩余宽度会被分成三等分，分别添加给第1个第2个子元素，效果如下：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flex-grow.jpg)
+![Alt text](./images/flex-grow.jpg)
 
 如下代码直接复制保存为html文件即可以查看效果：
 
@@ -472,7 +472,7 @@ flex属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 au
 align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。
 
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/align-self.jpg)
+![Alt text](./images/align-self.jpg)
 
 如下代码直接复制保存为html文件即可以查看效果：
 
@@ -520,7 +520,7 @@ align-self属性允许单个项目有与其他项目不一样的对齐方式，�
 ```
 效果如下：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flexdemo1.jpg)
+![Alt text](./images/flexdemo1.jpg)
 
 #### 2、Flex布局实现栅格效果
 
@@ -545,7 +545,7 @@ align-self属性允许单个项目有与其他项目不一样的对齐方式，�
 ```
 效果如下：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flexdemo2.jpg)
+![Alt text](./images/flexdemo2.jpg)
 
 #### 3、某个网格宽度为固定，其余分配剩余空间
 
@@ -573,7 +573,7 @@ align-self属性允许单个项目有与其他项目不一样的对齐方式，�
 ```
 效果如下：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flexdemo3.jpg)
+![Alt text](./images/flexdemo3.jpg)
 
 #### 4、圣杯布局
 
@@ -628,7 +628,7 @@ align-self属性允许单个项目有与其他项目不一样的对齐方式，�
 
 效果如下：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flexdemo4.jpg)
+![Alt text](./images/flexdemo4.jpg)
 
 #### 5、固定的底栏
 
@@ -663,7 +663,7 @@ align-self属性允许单个项目有与其他项目不一样的对齐方式，�
 ```
 效果如下：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flexdemo5.jpg)
+![Alt text](./images/flexdemo5.jpg)
 
 #### 6、自适应的圣杯布局
 
@@ -724,24 +724,4 @@ align-self属性允许单个项目有与其他项目不一样的对齐方式，�
 ```
 效果如下：
 
-![Alt text](https://raw.githubusercontent.com/tenadolanter/flex-layout-demo/master/images/flexdemo6.jpg)
-
-
-## Flex布局问题以及处理办法
-
-#### 1、底部无法在最下面
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![Alt text](./images/flexdemo6.jpg)
